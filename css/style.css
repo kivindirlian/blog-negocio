@@ -1,0 +1,290 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+H1 {
+  text-align: center;
+}
+body {
+  font-family: system-ui;
+  background-color: #fafafa;
+}
+
+/* INICIO DE LOS ESTILOS DE LA PAGINA DE INICIO */
+.body-2 {
+  background-color: blanchedalmond;
+}
+.contenido-bienvenida {
+  width: 100%;
+  height: 480px;
+  display: flex;
+}
+
+.video {
+  align-items: center;
+  justify-content: center;
+  margin: -40px 120px 0 320px;
+  width: 700px;
+  height: 500px;
+}
+
+.bienvenida {
+  width: 70px;
+  margin: 10px;
+}
+
+.bienvenida a {
+  color: white;
+  text-decoration: none;
+}
+
+.titulo {
+  width: 20%;
+  margin: auto;
+  border-radius: 10px 10px 0 0;
+
+  font-size: 40px;
+  text-align: center;
+}
+
+.mensaje {
+  width: 60%;
+  text-align: center;
+  margin: auto;
+  border-radius: 10px;
+  font-size: 20px;
+}
+
+/* inicio de los estilos de la cabecera */
+.cabecera {
+  background-color: #343a40;
+  box-shadow: 0px 10px 20px -10px rgba(0, 0, 0, 0.6);
+  height: 80px;
+  min-width: 350px;
+}
+
+.content-cabecera {
+  width: 80%;
+  margin: auto;
+  justify-content: space-between;
+  display: flex;
+  padding: 20px 0;
+}
+.content-cabecera h1 {
+  font-size: 1.5em;
+}
+
+/* menu */
+.menu ul {
+  display: flex;
+}
+
+.menu ul li {
+  margin: 10px;
+  list-style: none;
+}
+
+.menu a {
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+/* inicio del contenido de la pagina */
+
+.content-pagina {
+  display: grid;
+  margin: 20px;
+  justify-content: center;
+  grid-template: auto auto/33% 33% 33%;
+}
+
+.item {
+  background: white;
+  margin: 10px;
+  border-radius: 10px;
+  text-align: justify;
+  /* border: 1px solid red; */
+}
+
+.item:hover {
+  box-shadow: 2px 2px rgb(201, 201, 201);
+}
+
+.item img {
+  width: 100%;
+  height: 208px;
+  margin: 0;
+}
+
+.item p {
+  margin: 10px;
+}
+
+/* boton ver mas */
+.button {
+  width: 40%;
+  margin: 20px auto;
+  padding: 0 50px;
+}
+button {
+  background-color: rgba(0, 128, 0, 0.582);
+  border: 0;
+  width: 100%;
+  height: 30px;
+  border-radius: 10px;
+}
+
+.button a {
+  padding: 8px 37px;
+  text-decoration: none;
+  color: white;
+  font-size: 15px;
+}
+
+/* inicio del pie de pagina */
+.pie-pagina {
+  height: 50px;
+  width: 100%;
+  background-color: #343a40;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+/* incio de los estilos de la pagina de academia */
+
+body {
+  background-color: blanchedalmond;
+}
+
+.contenido {
+  width: 70%;
+  margin: 30px auto;
+  text-align: justify;
+}
+
+.contenido-2 {
+  display: flex;
+  margin-top: 40px;
+}
+
+.imagen1 {
+  width: 40%;
+  padding: 80px 0 0 30px;
+  height: 230px;
+}
+
+.imagen1 img {
+  width: 80%;
+  border-radius: 10px;
+}
+
+.texto {
+  width: 60%;
+}
+
+.videos-2 {
+  width: 40%;
+  margin: auto;
+}
+
+.videos-2 .item-2 {
+  margin: 10px;
+}
+
+.item-2 iframe {
+  border-radius: 10px;
+}
+
+/* media queris */
+
+@media only screen and (max-width: 768px) {
+  .contenido {
+    width: 90%;
+  }
+  .content-pagina {
+    grid-template: auto auto/50% 50%;
+  }
+  .videos-2 {
+    margin: 0 101px;
+  }
+}
+
+@media only screen and (max-width: 425px) {
+  .cabecera {
+    height: auto;
+  }
+
+  .content-cabecera {
+    display: block;
+    width: 100%;
+  }
+
+  .menu ul {
+    justify-content: center;
+  }
+
+  .content-pagina {
+    grid-template: auto / 90%;
+  }
+  .videos-2 {
+    margin: 0 101px;
+  }
+
+  .contenido-2 {
+    margin: auto;
+    display: block;
+  }
+
+  .imagen1,
+  .texto {
+    width: 90%;
+    height: auto;
+    padding: 10px;
+    margin: auto;
+  }
+
+  .imagen1 img {
+    width: 100%;
+  }
+
+  .videos-2 {
+    width: 90%;
+    margin: auto;
+  }
+
+  .videos-2 iframe {
+    width: 100%;
+  }
+
+  .pie-pagina {
+    display: block;
+    height: auto;
+    text-align: center;
+  }
+}
+
+@media only screen and (max-width: 375px) {
+  .button {
+    width: 50%;
+  }
+}
+
+@media only screen and (max-width: 320px) {
+    .cabecera{
+        
+    }
+
+  .contenido {
+    width: 90%;
+    
+  }
+  .content-pagina {
+    grid-template:  auto/ 99%;
+    margin: 0;
+  }
+
+ 
+}
